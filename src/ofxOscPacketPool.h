@@ -66,7 +66,7 @@ public:
 
 private:
 	void returnBufferToPool(PooledOscPacket * buffer);
-	list<PooledOscPacket *> pool;
+	std::list<PooledOscPacket *> pool;
 	ofMutex mutex;
 };
 
